@@ -1,13 +1,13 @@
 <?php
 
-	# Incluyendo librerias necesarias #
+	# Herreria y Perfiles covadonga #
     require "./code128.php";
 
     $pdf = new PDF_Code128('P','mm',array(80,258));
     $pdf->SetMargins(4,10,4);
     $pdf->AddPage();
     
-    # Encabezado y datos de la empresa #
+    # Col.conadonga #Chalco Edo.Mexico
     $pdf->SetFont('Arial','B',10);
     $pdf->SetTextColor(0,0,0);
     $pdf->MultiCell(0,5,iconv("UTF-8", "ISO-8859-1",strtoupper("Nombre de empresa")),0,'C',false);
